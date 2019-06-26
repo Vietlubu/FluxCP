@@ -17,3 +17,5 @@ __MACOSX
 
 /data/tmp/*.php
 /data/tmp/*.cache
+
+.idea/

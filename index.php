@@ -42,6 +42,9 @@ set_include_path(FLUX_LIB_DIR.PATH_SEPARATOR.get_include_path());
 // Default account group IDs.
 require_once FLUX_CONFIG_DIR.'/groups.php';
 
+// Helpers
+require_once 'lib/helpers.php';
+
 // Some necessary Flux core libraries.
 require_once 'Flux.php';
 require_once 'Flux/Security.php';
