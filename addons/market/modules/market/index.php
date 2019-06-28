@@ -9,7 +9,7 @@
 
     // Statement parameters, joins and conditions.
     $bind        = [];
-    $sqlpartial = "";
+    $sqlpartial = "WHERE $tableVendingName.type IN (0, 1)";
 
     $sth = $server->connection->getStatement("SELECT COUNT(DISTINCT($tableVendingName.owner)) AS total FROM $tableVendingName $sqlpartial");
     $sth->execute($bind);
